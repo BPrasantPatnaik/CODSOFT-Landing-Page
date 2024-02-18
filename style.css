@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-image: url("https://cdn.wallpapersafari.com/18/4/f6SdYa.jpg");
+            
+        }
+
+        .Title {
+            background-color: #191970;
+            text-align: center;
+            font-family:'sans-serif';
+            padding-top: 100px;
+            
+
+        }
+        .content {
+            display:flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content:center;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            padding-left:500px;
+          }
+          
+          .content h2 {
+            color: #fff;
+            font-size: 50px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+          }
+          
+          .content h2:nth-child(1) {
+            color: transparent;
+            -webkit-text-stroke: 1px #F0E68C;
+          }
+          
+          .content h2:nth-child(2) {
+            color: #CD5C5C;
+            animation: animate 4s ease-in-out infinite;
+          }
+          
+          @keyframes animate {
+            0%,
+            100% {
+              clip-path: polygon(
+                0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%
+              );
+            }
+          
+            50% {
+              clip-path: polygon(
+                0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%
+              );
+            }
+          }
+
+        
+        .Image {
+            text-align: center;
+        }
+        .profile {
+            text-align: center;
+            display: flex;
+        }
+
+        img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin:20px;
+            
+            
+        }
+
+        .Headline {
+            text-align: center;
+            margin: 10px;
+            color: black;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1; /* Add this line */
+        }
+
+        .About {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    color:#FFFAF0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 5);
+    position: relative;
+    z-index: 1; /* Add this line */
+}
+
+        .About h2,
+        .AdmiringQualities h2 {
+            color: #008080;
+        }
+
+        .About p,
+        .AdmiringQualities p {
+            margin-bottom: 15px;
+        }
+
+        .AdmiringQualities {
+            max-width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            color:#FFFAF0;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            text-align: justify;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 5);
+            position: relative;
+            z-index: 1; /* Add this line */
+        }
+
+
+        .AdmiringQualities ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px;
+        }
+
+        .AdmiringQualities ul li {
+            position: relative;
+        }
+
+        .AdmiringQualities ul li:before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            width: 15px;
+            height: 15px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' viewBox='0 0 426.667 426.667' style='enable-background:new 0 0 426.667 426.667;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath d='M213.333,106.667c-58.88,0-106.667,47.787-106.667,106.667S154.453,320,213.333,320S320,272.213,320,213.333 S272.213,106.667,213.333,106.667z' fill='gold'/%3E%3Cpath d='M213.333,0C95.467,0,0,95.467,0,213.333s95.467,213.333,213.333,213.333S426.667,331.2,426.667,213.333 S331.2,0,213.333,0z M213.333,384c-94.293,0-170.667-76.373-170.667-170.667S119.04,42.667,213.333,42.667 S384,119.04,384,213.333S307.627,384,213.333,384z' fill='gold'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .AdmiringQualities ul li h3.underline {
+            padding: 5px 0;
+            position: relative;
+            font-weight:900;
+            
+        }
+
+        .AdmiringQualities ul li h3.underline::before {
+            content: "";
+            position: absolute;
+            left: 7%;
+            bottom: 0;
+            width: 150px;
+            height: 12px;
+            transform: skew(-12deg) translateX(-50%);
+            background: #BC8F8F;
+            z-index: -1;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            width: 100%;
+            
+        }
+
+        .waviy {
+            position: relative;
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+            font-size: 35px;
+          }
+          .waviy span {
+            font-family: 'Alfa Slab One', cursive;
+            position: relative;
+            display: inline-block;
+            color: #20B2AA;
+            text-transform: uppercase;
+            animation: waviy 1s infinite;
+            animation-delay: calc(.1s * var(--i));
+            
+          }
+          @keyframes waviy {
+            0%,40%,100% {
+              transform: translateY(0)
+            }
+            20% {
+              transform: translateY(-20px)
+            }
+          }
+
+          .twist {
+            position: relative;
+          }
+          .twist span {
+            position: relative;
+            display: inline-block;
+            font-size: 20px;
+            color: #B22222;
+            text-transform: uppercase;
+            animation: flip 4s infinite;
+            animation-delay: calc(.2s * var(--i))
+          }
+          @keyframes flip {
+            0%,80% {
+              transform: rotateY(360deg) 
+            }
+          }
+          .lineUp {
+            position:relative;
+            right:90px;
+            top:10px;
+            max-width : 500px;
+            font-family: sans-serif;
+            background: linear-gradient(to right, rgb(255,127,80,10) 30%, rgba(225, 250, 250, 0.5) 60%, rgba(255, 255, 255, 0) 41%), linear-gradient(rgb(64,224,208) 22%, rgb(0,128,0) 70%, rgb(78, 99, 132) 61%);
+           background-clip: text;
+           -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+            animation: 5s anim-lineUp ease-out infinite;
+          }
+          @keyframes anim-lineUp {
+            0% {
+              opacity: 0;
+              transform: translateY(80%);
+            }
+            20% {
+              opacity: 0;
+            }
+            50% {
+              opacity: 1;
+              transform: translateY(0%);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0%);
+            }
+          }
+
+          .social-media{
+            padding:10px;
+            color:#48D1CC;
+          }
+          .social-media:hover {
+            color: #0000CD;
+        }
+          
